@@ -18,17 +18,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//注释代表这是控制层
 @Controller
 public class HomeController {
 
+    //自动注入bean
     @Autowired
     private UserService userService;
 
     @Autowired
     private DiscussPostService discussPostService;
 
+    //路径映射，get请求
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public String getIndexPage(Model model,Page page){
+        //写入条目数和路径
         page.setRows(discussPostService.findDiscussPostRows(0));
         page.setPath("/index");
 

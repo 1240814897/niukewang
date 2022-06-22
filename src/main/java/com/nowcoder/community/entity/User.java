@@ -2,6 +2,7 @@ package com.nowcoder.community.entity;
 
 import java.util.Date;
 
+//用户实体
 public class User {
     private int id;
     private String username;

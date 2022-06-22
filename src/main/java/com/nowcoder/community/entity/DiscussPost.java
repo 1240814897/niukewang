@@ -2,6 +2,7 @@ package com.nowcoder.community.entity;
 
 import java.util.Date;
 
+//帖子实体
 public class DiscussPost {
     private int id;
     private int userId;

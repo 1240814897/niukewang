@@ -1,11 +1,12 @@
 package com.nowcoder.community.entity;
 
+//页面实体
 public class Page {
 
     private int current = 1;
     private int limit = 10;
-    private int rows;
-    private String path;
+    private int rows;       //数据条数
+    private String path;    //页面路径
 
     public int getCurrent() {
         return current;
